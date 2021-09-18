@@ -16,7 +16,9 @@
 
 </div>
 <div>
-  <p><a class="btn btn-warning" href="{% url 'basic_app:update' pk=school_details.pk %}">Update</a>
-    <p><a class="btn btn-delete" href="#">Delete</a></p>
+  <p><a class="btn btn-warning" href="{% url 'basic_app:update' pk=school_details.pk %}">Update</a></p>
+  <p><a class="btn btn-delete" href="{% url 'basic_app:delete' pk=school_details.pk %}">Delete</a></p>
+  <p><a class="btn btn-warning" href="{% url 'basic_app:create' %}">Create</a></p>
+  <p><a class="btn btn-warning" href="{% url 'basic_app:stCreate' %}">Student Create</a></p>
 </div>
 {% endblock%}
