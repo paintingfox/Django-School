@@ -1,6 +1,7 @@
 from django.db import models
 from django.db.models.deletion import CASCADE
 from django.db.models.fields import CharField
+from django.urls import reverse
 
 from django.urls import reverse
 

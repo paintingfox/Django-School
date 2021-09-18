@@ -19,11 +19,10 @@ class SchoolDetailView(DetailView):
 class SchoolDetailUpdateView(UpdateView):
     fields = ('name', 'principal')
     model = models.School
-
+    template_name = 'basic_app/update.html'
+    
 class SchoolDetailCreateView(CreateView):
     fields = ('name', 'principal', 'loaction')
     model = models.School
+    template_name = 'basic_app/update.html'
 
-class SchoolDetailDeleteView(DeleteView):
-    fields = ('name', 'principal')
-    model = models.School
